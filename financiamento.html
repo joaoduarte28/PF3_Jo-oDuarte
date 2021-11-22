@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="jumbotron text-center bg-dark"><h1>POUPANÇA</h1></div>
+    </header>
+
+    <div class="container">
+        <div>
+            <label>Valor Aplicado Mensalmente(P):</label><br>
+
+            <div class="input">
+                <input id="valoraplicado" type="text" class="form-control" name="valoraplicado" required="required"></input><br>
+            </div>
+
+        </div><br>
+
+            <label>Taxa de Juros(i):</label><br>
+            <div class="input">
+                <input id="juros" type="number" class="form-control" name="juros" required="required"></input><br>
+            </div>
+
+        <div><br>
+
+            <label>Número de Parcelas:</label><br>
+            <div class="input">
+                <input id="altura" type="parcelas" class="form-control" name="parcelas" required="required"></input><br>
+            </div>
+
+        </div>
+
+        <div class="button" style="text-align: center;">
+            <button id="calcular" class="btn btn-dark btn-lg">Calcular</button>
+        </div>
+
+    </div><br>
+    <h1>Valor Futuro Poupado:</h1>
+    <div class="container" id="resultado">
+    </div>
+
+    <script src="script.js">
+
+</script>
+</body>
+</html>
